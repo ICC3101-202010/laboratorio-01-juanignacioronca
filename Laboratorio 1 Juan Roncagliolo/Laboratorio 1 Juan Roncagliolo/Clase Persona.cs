@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_1_Juan_Roncagliolo
 {
-    class Program
+    class Clase_Persona
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }
