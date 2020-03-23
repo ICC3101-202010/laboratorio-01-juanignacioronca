@@ -9,15 +9,26 @@ namespace Laboratorio_1_Juan_Roncagliolo
     class Clase_Persona
     {
         //Creacion de atributos
+
         public string Name;
         public string LastName;
+        public static string Name_1 = "Juan";
+        public static string LastName_1 = "Roncagliolo";
         //Creacion metodo lanzar
+
         public int Lanzar()
         {
             Random rnd = new Random();
             int hand = rnd.Next(0,3);
             return hand;
         }
-
+        //Parte 2:
+        //Creacion de un cosntructor:
+        //Un constructor es un metodo para la asignacion de atributos
+        public Clase_Persona(string n, string ln)
+        {
+            Name = n;
+            LastName = ln;
+        }
     }
 }
