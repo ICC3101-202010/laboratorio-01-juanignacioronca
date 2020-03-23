@@ -44,13 +44,8 @@ namespace Laboratorio_1_Juan_Roncagliolo
             //Utilizacion del contructor:
             {
                 Console.WriteLine("------------Parte 2:------------\n");
-                Console.WriteLine("Introduzca su nombre: ");
-                string Name = Console.ReadLine();
-                Console.WriteLine("\nIntroduzca su apellido: ");
-                string LastName = Console.ReadLine();
-                Clase_Persona persona2 = new Clase_Persona(Name, LastName);
+                Clase_Persona persona2 = new Clase_Persona("Bob", "Kunga");
                 Console.WriteLine("\nNombre jugador: " + persona2.Name + " " + persona2.LastName + "\n");
-
                 int jugada_2 = persona2.Lanzar();
                 string conv_jugada_2;
                 if (jugada_2 == 0)
