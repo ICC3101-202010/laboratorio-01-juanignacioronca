@@ -14,37 +14,19 @@ namespace Laboratorio_1_Juan_Roncagliolo
 
             //Imprimir nombre del jugador 1:
             {
-                Console.WriteLine("------------Parte 1:------------\n");
-                // Asignar, convertir e imprimir jugada del jugador 1: 
+                // Asignar e imprimir jugada del jugador 1: 
 
                 Clase_Persona persona1 = new Clase_Persona("Juan", "Roncagliolo");
                 int jugada_1 = persona1.Lanzar();
-                string conv_jugada_1;
-                if (jugada_1 == 0)
-                {
-                    conv_jugada_1 = "Piedra";
-                }
-                else if (jugada_1 == 1)
-                {
-                    conv_jugada_1 = "Papel";
-                }
-                else
-                {
-                    conv_jugada_1 = "Tijera";
-                }
-                Console.WriteLine("Valor jugada: (" + jugada_1 + ") = " + conv_jugada_1);
-                Console.WriteLine("\n----------Fin parte 1-----------\n\nPresione 'Enter' para continuar: \n");
-                Console.ReadKey();
+                Console.WriteLine(jugada_1);
             }
-
             //Parte 2:
 
             //Utilizacion del contructor:
             {
-                Console.WriteLine("------------Parte 2:------------\n");
                 Clase_Persona persona2 = new Clase_Persona("Bob", "Kunga");
-                Console.WriteLine("Nombre jugador: " + persona2.Name + " " + persona2.LastName + "\n");
-                Console.WriteLine("\n----------Fin parte 2-----------\n\nPresione 'Enter' para salir: \n");
+                Console.WriteLine(persona2.Name + " " + persona2.LastName + "\n");
+                Console.WriteLine("Presione 'Enter' para salir:");
                 Console.ReadKey();
             }
 
