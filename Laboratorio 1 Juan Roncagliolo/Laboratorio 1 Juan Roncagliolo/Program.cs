@@ -15,8 +15,6 @@ namespace Laboratorio_1_Juan_Roncagliolo
             //Imprimir nombre del jugador 1:
             {
                 Console.WriteLine("------------Parte 1:------------\n");
-                Console.WriteLine("Nombre jugador: " + Clase_Persona.Name_1 + " " + Clase_Persona.LastName_1 + "\n");
-
                 // Asignar, convertir e imprimir jugada del jugador 1: 
 
                 Clase_Persona persona1 = new Clase_Persona("Juan", "Roncagliolo");
@@ -45,22 +43,7 @@ namespace Laboratorio_1_Juan_Roncagliolo
             {
                 Console.WriteLine("------------Parte 2:------------\n");
                 Clase_Persona persona2 = new Clase_Persona("Bob", "Kunga");
-                Console.WriteLine("\nNombre jugador: " + persona2.Name + " " + persona2.LastName + "\n");
-                int jugada_2 = persona2.Lanzar();
-                string conv_jugada_2;
-                if (jugada_2 == 0)
-                {
-                    conv_jugada_2 = "Piedra";
-                }
-                else if (jugada_2 == 1)
-                {
-                    conv_jugada_2 = "Papel";
-                }
-                else
-                {
-                    conv_jugada_2 = "Tijera";
-                }
-                Console.WriteLine("Valor jugada: (" + jugada_2 + ") = " + conv_jugada_2);
+                Console.WriteLine("Nombre jugador: " + persona2.Name + " " + persona2.LastName + "\n");
                 Console.WriteLine("\n----------Fin parte 2-----------\n\nPresione 'Enter' para salir: \n");
                 Console.ReadKey();
             }

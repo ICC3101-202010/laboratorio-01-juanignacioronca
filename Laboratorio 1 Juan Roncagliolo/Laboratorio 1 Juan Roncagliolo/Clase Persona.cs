@@ -12,8 +12,6 @@ namespace Laboratorio_1_Juan_Roncagliolo
         
         public string Name;
         public string LastName;
-        public static string Name_1 = "Juan";
-        public static string LastName_1 = "Roncagliolo";
     
         //Creacion metodo lanzar
 
